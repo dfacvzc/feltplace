@@ -413,26 +413,29 @@ jQuery(function($){
 	   
 		
 	});
-  $( window ).scroll( function() {
 	
-
-	sh = $(".tab").height(); 
 	$('.tab a').click(function(e) {
 		let winH = screen.height;
 		let winH2 = window.innerHeight;
 		var winR = winH - winH2;
-		 
+		 sh = $(".tab").height(); 
 		e.preventDefault();
 		 
 		  target = $(this).attr('href');
 		 
 		  
         $('html,body').animate({
-            scrollTop: $("#" + target).offset().top - (sh+winR)
+            scrollTop: $("#" + target).offset().top - (sh+winR-10)
         }, 300);
 		$('.tab a').removeClass('on');
 		$(this).addClass('on');
     });   
+  $( window ).scroll( function() {
+	
+
+	let winH = screen.height;
+		let winH2 = window.innerHeight;
+		var winR = winH - winH2;
 	
 	var sit_top = $( ".product_view").offset().top;
 	var sit_H = $( ".product_view").offset().top + $( ".product_view").outerHeight();
@@ -442,7 +445,7 @@ jQuery(function($){
 		 $(".tab").removeClass("fix");
 	}
 	
-	fir_href = $(".tab a").eq(1).attr('href');
+	fir_href = $(".tab a").eq(0).attr('href');
 	sh =  $(".tab").outerHeight();
 	 
 	fir_target =$("#"+fir_href); 
@@ -465,7 +468,7 @@ jQuery(function($){
 		 
 		target_end = target_h +target.offset().top;
 	 
-		if (  ($(this).scrollTop() >= (target.offset().top - sh) && $(this).scrollTop() <= (target_end - sh))) {
+		if (  ($(this).scrollTop() >= (target.offset().top - (sh+winR)) && $(this).scrollTop() <= (target_end - (sh+winR)))) {
 		  
 			$(".tab a").removeClass("on");
 			$(".tab a").eq(i).addClass("on");
