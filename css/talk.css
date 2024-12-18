@@ -1,0 +1,65 @@
+.wrap {padding-bottom:0;}
+
+.talk_list{}
+.talk_list li{padding:5vw 0}
+.talk_list li a{display:flex;align-items: center;}
+.talk_thumb{position:relative;width:12vw;flex: 1 0 auto;}
+.talk_thumb span{display:block;width:12vw;height:12vw;border-radius:50%;border:#fff;overflow: hidden; background-color:#fff;}
+.talk_thumb span img{}
+
+.th2{height: 12vw;}
+.th2 span{position:absolute; width:8.5vw; height:8.5vw;}
+.th2 span:first-child{top:0; left:0;}
+.th2 span:last-child{bottom:0; right:0;}
+
+
+.talk_tit{position: relative;padding-left: 3vw;width: 100%;}
+.talk_tit h5{font-size:4.4vw}
+.talk_tit h5 span{font-size:3.3vw; color:#8E8E93; margin-left:1vw; font-weight:400}
+.talk_tit p{margin-top:2vw; color:#00000080; font-size:3.3vw; font-weight:600}
+.talk_tit .count{position:absolute;padding: 0 1.8vw;height:5vw;line-height:5vw;border-radius:2.5vw;color:#fff;font-size:2.7vw;font-weight:600;background-color:#F8992C;bottom: -0.7vw;right: 0;}
+
+
+
+.talk_view{position: relative;height: calc(100vh - 14vw);overflow-y: scroll;}
+
+.talk_info{position:relative;  padding:5vw 5vw 10vw; background-color:#fff}
+.talk_info p{font-size:3.3vw; color:#8E8E93; line-height:1.4em;}
+.talk_info .btn{position:absolute; bottom:3vw; right:5vw; width:16vw; height:6vw; line-height:6vw; font-size:2.7vw; text-align:center; border:1px solid #E5E5EA}
+
+.chat_wrap{padding: 4vw 5vw 18vw;}
+
+.date {text-align:center;padding: 1vw 0;}
+.date div{display:inline-block;padding:0 2.5vw;background:#00000026;height:6vw;line-height:6vw;margin:0 auto;color: #F8F8F9;font-size: 3vw;border-radius: 3vw;}
+
+
+.chat{position:relative;padding-left:10vw;margin-bottom: 3vw;}
+.chat_profile{position:absolute;top: 0;left: 0;width:8vw;height:8vw;overflow:hidden;border-radius:2vw;}
+.chat_profile span{position:absolute; right:0; bottom:0; display:block; width:4vw; line-height:4vw; height:4vw; background-color:#5499f7; text-align:center;}
+.chat_profile span i{font-size:2vw; color:#fff;}
+
+
+.chat_cont h6{color:#00000080;font-size: 3vw;margin-bottom: 1vw;}
+.chat_cont .chat_text::after{position:absolute;top: 0vw;width:2.3vw;height:3.4vw;content:'';background-size: 100% !important;!i;!;}
+.other .chat_text:last-child::after{display:none;}
+
+
+.chat_text{position: relative;display:flex;margin-bottom: 1vw;align-items: flex-end;}
+.chat_text:last-child{margin-bottom:0;}
+.bubble{position:relative;font-size: 3.3vw;padding: 2vw 2.5vw;border-radius: 3vw;line-height:1.4em}
+
+.chat_time{padding:1vw;color: #00000080;font-size: 2.5vw;}
+.chat_time span{display:block; color:#fae64c;font-weight:500 }
+
+
+.other .chat_text{}
+.other .chat_text::after{background:url(/images/talk/tail1.png) no-repeat 50%;left: -1vw;}
+.other .bubble{background-color:#fff}
+
+
+.me .chat_text{
+    flex-direction: row-reverse;
+}
+.me .chat_text:first-child::after{background:url(/images/talk/tail2.png) no-repeat 50%;right: -0.5vw;}
+.me .bubble{background-color:#FAE64C}
+

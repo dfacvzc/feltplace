@@ -1,0 +1,69 @@
+
+.login{width:100%;height:100vh;background: url(/images/common/intro.png) no-repeat 50% 30% #EE2D2C;background-size: 30vh auto;}
+
+
+.login_btn{position:absolute;left:0;width:100%;bottom: 1vh;}
+.login_btn .inbox>div{padding: 2vh 0;}
+.login_btn a{display:block;height: 7vh;line-height: 7vh;margin-bottom: 1vh;font-size: 2.3vh;text-align:center;}
+.login_btn a:last-child{margin-bottom:0;}
+
+.login_btn .kakao{background-color:#fce702;}
+.login_btn .basic{border:1px solid #fff; color:#fff;}
+.login_btn .text_btn{color:#fff;height: 14vw;line-height: 14vw;}
+
+
+.login_btn .social_login{border-bottom: 1px dashed #fff;}
+
+.wrap.register{ display: flex; flex-direction: column; padding-bottom: 0;}
+
+.register_form{position:relative;padding-top: 5vw;height: 100%;flex: 1 0 auto;}
+.register_form .alert_btn{position:absolute; left:0; bottom:0; width:100%;}
+
+.reg_step{position:relative;}
+.reg_step span{display:inline-block; width:3vw; height:1.6vw; border-radius:0.8vw; background-color:#eceef1}
+.reg_step span.on{background-color:#f8992c}
+.reg_step div{position:absolute; top:50%; right:0; width:10vw; margin-top:-3.5vw; height:7vw; line-height:7vw; border-radius:1vw; background-color:#d1d1d6; color:#fff; text-align:center; font-size:3.6vw; font-weight:bold}
+
+.reg_tit{padding: 9vw 0;}
+.reg_tit h5{font-size:7.7vw;line-height: 1.4em;padding-right: 6vw;}
+.reg_tit p{font-size:4.4vw; margin-top:3.5vw; color:#8E8E93;}
+  
+ 
+.reg_sel{}
+.reg_sel ul{display:flex;flex-wrap: wrap;justify-content: space-between;}
+.reg_sel li{width:44vw;height:12vw;line-height:12vw;border-radius:6vw;text-align:center;font-size:3.8vw;margin-bottom:2vw;background: #f5f5f5;border: 1px solid #d7d7d7;}
+.reg_sel li:last-child,.reg_sel li:nth-last-child(2){margin-bottom:0;}
+
+.reg_img_sel ul{display:flex;flex-wrap: wrap;justify-content: space-between;}
+.reg_img_sel li{position:relative;width:44vw;border-radius: 2vw;margin-bottom:2vw;overflow: hidden;}
+.reg_img_sel .chk_box {position:absolute;top: 2vw;right: 2vw;}
+.reg_img_sel .chk_box span{border:1px solid #fff !important;border-radius: 0 !important;background: transparent !important;!i;!;!i;!;}
+.reg_img_sel .chk_box input[type="checkbox"]:checked + label span{background-color:#f8992c !important;}
+
+
+.my_tit img{width:8.8vw; vertical-align:middle}
+
+
+.my_profile{padding:8vw 0 6vw}
+.my_thumb{margin-bottom:3vw}
+.my_thumb a{position:relative;display:block;width:24vw;height:24vw;border-radius: 50%;background-size:cover !important;margin: 0 auto;}
+.my_thumb a span{position:absolute; right:0; bottom:0; width:8.8vw}
+
+
+.wt_info{}
+.wt_info>ul>li{border:1px solid #E5E5EA; border-radius:4vw; padding:4.5vw 5vw; background-color:#fff; margin-bottom:3vw}
+.wt_info>ul>li:last-child{margin-bottom:0;}
+.wt_info>ul>li h6{color:#8E8E93; font-size:3.3vw; margin-bottom:3.5vw; font-weight:400}
+.wt_info>ul>li .wt_name{font-size:4.4vw; font-weight:500}
+.wt_info>ul>li p{font-size:3.8vw; line-height:1.3em}
+
+.wt_email p{font-size:4.4vw; font-weight:bold}
+.wt_email a{display:block;font-size:3.8vw;text-align:center;width:100%;height:10vw;line-height: 10vw;margin-top: 3vw;}
+
+
+.my_send{width:100%; height:12vw; line-height:12vw; font-size:4.4vw; margin:10vw 0 0}
+
+
+.my_btn{text-align:right; margin-top:14vw}
+.my_btn a{margin-left:6vw}
+.my_btn .gray{font-size:3.6vw}

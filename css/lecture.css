@@ -1,0 +1,91 @@
+
+.my_list_wrap{padding:5vw 0;}
+
+.lec_tit{font-size:3.8vw; margin-bottom:3vw}
+
+.lec_sch{display:flex; margin-bottom:5vw;}
+.lec_sch a{padding:0 3vw; height:8vw; line-height:8vw; color:#333; font-size:3.3vw; font-weight:500; text-align:center; border-radius:4vw; border:1px solid #0000001A; margin-right:1vw}
+.lec_sch a:last-child{margin-right:0;}
+.lec_sch a i{display:none; margin-left:1vw;}
+.lec_sch a.on{background-color:#2C1604; color:#fff;}
+.lec_sch a.on i{display:inline-block; color:#fff;}
+
+
+.lec_input{position:relative; margin-bottom:5vw}
+.lec_input input{height:9vw;background-color:#f5f5f5;width: 100%; padding:0 2vw; font-size:3.5vw}
+.lec_input button{position:absolute;top:50%;right: 2vw;transform: translateY(-50%);width: 7vw;}
+
+
+
+
+.info_text{padding:6vw 5vw;}
+
+
+.my_list{}
+.my_list li{display:flex;align-items: center;margin-bottom: 4vw;}
+.my_list li:last-child{margin-bottom:0;}
+.my_list li .my_thumb{width:21vw;flex: 1 0 auto;border-radius: 2vw;overflow: hidden;}
+.my_list li .my_lec_info{padding-left:4vw;width: 100%;}
+.my_lec_info h5{font-size:4.1vw;margin-bottom: 1vw;line-height:1.4em}
+.my_lec_info>div{display:flex;align-items: center;justify-content: space-between;}
+.my_lec_info>div span{display:inline-block;width:9vw;height:9vw;margin-right:3vw;background-size:cover;background-repeat: no-repeat;border-radius:50%;background-position:50%;vertical-align: middle;}
+.my_lec_info>div div{font-size:3.3vw;}
+.my_lec_info>div a{font-size:3.3vw;font-weight:600;color: #828282;}
+.my_lec_info>div a i{color:#828282}
+
+
+
+
+.lec_calandar{}
+
+
+.cal_select{position:relative; padding:7vw 0;display:flex;justify-content: center;}
+.cal_select button{padding:1vw 2vw;}
+.cal_select button i{font-size: 4vw;}
+.cal_select h5{font-size:5.5vw;padding: 0 5vw;}
+.cal_select .rev{position:absolute;top:50%;right: 5vw;color:#ee2d2c;font-size:3.6vw;transform: translateY(-50%);font-weight: bold;}
+
+
+.calandar{}
+
+.calandar th{height:12vw; font-size:3.8vw; text-align:center; font-weight:600}
+
+.calandar td{position:relative;height:13vw;font-size:3.8vw;font-weight:500;text-align: center;}
+.calandar td .event{position:absolute; top:2vw; right:2vw; width:1.7vw; height:1.7vw; border-radius:50%;}
+
+.day-past{color: #AEAEB2;}
+.day-past .event{background-color:#b3b3b7}
+
+.today{background-color:#F8992C;color:#fff;border-radius: 2vw;}
+.today .event{background-color:#fff}
+.today .day_info{color:#fff;}
+
+
+.day_info{display:block;font-size: 2.7vw;margin-top: 1vw;}
+.day-fc .event{background-color:#ee2d2c}
+
+
+
+.day_list{}
+.day_list li{border-radius:4vw;border:1px solid #D4D4D4;padding: 5vw 5vw 3.5vw; margin-bottom:3vw}
+.day_list li:last-child{margin-bottom:0;}
+.day_list li h6{font-size:3.8vw; line-height:1.4em; margin-bottom:2vw; font-weight:400}
+.day_list li h6 span{display:block; margin-bottom:1vw; font-weight:bold}
+.day_list li p img{width:6.6vw;vertical-align: middle;}
+.day_list li p{font-size:3.8vw;font-weight:600;display: flex;align-items: center;}
+
+.sub_contents{position:relative;overflow: hidden;}
+.place{height: calc(100vh - 32vw);}
+
+.lecture_list{padding-bottom:2vw;background-color:#fff;border-radius:4vw 4vw 0 0;position: absolute;left: 0;top: 70%;width: 100%;}
+.lecture_list .bar{padding:2vw 0 5vw;}
+.lecture_list .bar span{display:block; width:11vw; height:1vw; background-color:#e1e3e9; border-radius:0.5vw;  margin:0 auto;}
+.lecture_list ul{height: 157vw;overflow-y: scroll;padding:0 5vw}
+.lecture_list li{padding:2.8vw 0; border-bottom:1px solid #ccc;}
+.lecture_list li a{display:flex;justify-content: space-between;align-items: center;}
+.lecture_list li div{padding-right:5vw;width: 100%;}
+.lecture_list li h5{font-size:3.8vw;}
+.lecture_list li h5 span{color:#00000080; font-size:3.3vw}
+
+.lecture_list li p{font-size:3.3vw; margin-top:1vw}
+.lecture_list li .lec_thumb{width:17vw;flex: 1 1 auto;}
