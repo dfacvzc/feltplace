@@ -25,14 +25,39 @@ include "../head.sub.php";?>
 		</div>
 	</div>
 	<div class="sub_contents">
-		<div class="pd_visual">
-			<ul>
-				<li>
-					<img src="/images/pd/img.png" alt=""/>
-					  
+		<div class="pd_visual  swiper-container">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide">
+					<img src="/images/pd/list.png" alt=""/>
+					 
+					<a href="#"></a>
+				</li>
+				<li class="swiper-slide">
+					<img src="/images/pd/list2.png" alt=""/>
+					 
+					<a href="#"></a>
 				</li>
 			</ul>
+			<div class="swiper-pagination"></div>
 		</div>
+		 <script>
+			var swiper = new Swiper(".pd_visual", {
+				slidesPerView: 'auto',
+				loop:true,
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction: false,
+				},
+				 
+				 speed:700,
+				updateOnWindowResize: true,
+			  pagination: {
+				el: ".pd_visual .swiper-pagination",
+				 
+			  },
+			  
+			});
+		</script>
 		<div class="product_info">
 			<div class="inbox">
 				<div class="pd_tit">
@@ -67,14 +92,15 @@ include "../head.sub.php";?>
 		</div>
 		<div class="product_view">
 			<div class="tab">
-				<a href="#" class="on">강의소개</a>
-				<a href="#">커리큘럼</a>
-				<a href="#">후기</a>
-				<a href="#">Q&A</a>
+				<a href="tab1" class="on">커리큘럼</a>
+				<a href="tab2">후기</a>
+				<a href="tab3">추천강의</a>
+				<a href="tab4">Q&A</a>
 			</div>
 			<div class="best_review v_review swiper-container">
 				<ul class="swiper-wrapper">
 					<li class="swiper-slide">
+						<a href="/product/review_detail.php">
 						<div class="rv_writer">
 							<div>
 								<div class="pr_star">
@@ -90,17 +116,33 @@ include "../head.sub.php";?>
 						</div>
 						<div class="rv_con">
 							<p>
-								<a href="#">
+								
 								와 캐릭터 너무 귀엽고 따뜻해요!<br>
 								특징 잘 살려주시고 감사드립니다
-								</a>
+								
 							</p>
-							<a href="#" class="rv_img"><img src="/images/pd/rv_img.png" alt=""/></a>
+							<span class="rv_img"><img src="/images/pd/rv_img.png" alt=""/></span>
 						</div>
+						</a>
 					</li>	
 				</ul>
 			</div>
-			<div class="tab1">
+			 <script>
+			var swiper = new Swiper(".best_review", {
+				slidesPerView: 'auto',
+				loop:true,
+				autoplay: {
+					delay: 3000,
+					disableOnInteraction: false,
+				},
+				 
+				 speed:700,
+				updateOnWindowResize: true,
+			  
+			  
+			});
+		  </script>
+			<div class="tab1" id="tab1">
 				<div class="info_box">
 					<div  class="main_tit">
 					<h3>강의 커리큘럼<span class="info"><i class="fa-solid fa-info"></i></span></h3>
@@ -147,7 +189,7 @@ include "../head.sub.php";?>
 					<h5>강의 제보센터 <a href="#">제보하기</a></h5>
 				</div>
 			</div>
-			<div class="tab2  ">
+			<div class="tab2  "  id="tab2">
 				<div class="inbox">
 					<div class="v_rv_tit">
 						<h5>리뷰 (969) </h5>
@@ -275,7 +317,7 @@ include "../head.sub.php";?>
 			
 			
 			</div>
-			<div class="tab3 main_popular">
+			<div class="tab3 main_popular"  id="tab3">
 				<div class="inbox">
 					<h5 class="tab_tit">이 강의와 비슷한 추천 강의 </h5>
 					<div class="product_list  swiper-container">
@@ -325,7 +367,60 @@ include "../head.sub.php";?>
 					</div>
 				</div>
 			</div>
-			
+			<div class="tab4"  id="tab4">
+				<div class="inbox">
+					<h5 class="tab_tit">상품 Q&A <a href="#">Q&A쓰기</a></h5>
+					<div class="v_qna">
+						<ul>
+							<li>
+								<div class="qa_writer">
+									<div>
+										 
+										lee**********
+									</div>
+									<span class="date">2024.08.18</span>
+								</div>
+								<div class="qa_con">
+									<div class="qa_option">
+										[배송문의]
+									</div>
+									<p>
+										<a href="#">
+										<img src="/images/common/lock.png" alt=""/>
+										비밀글입니다.
+									 
+										</a>
+									</p>
+									 <a href="#" class="state state1">No</a>
+								</div>
+							</li>
+							<li>
+								<div class="qa_writer">
+									<div>
+										 
+										lee**********
+									</div>
+									<span class="date">2024.08.18</span>
+								</div>
+								<div class="qa_con">
+									<div class="qa_option">
+										[배송문의]
+									</div>
+									<p>
+										<a href="#">
+										<img src="/images/common/lock.png" alt=""/>
+										비밀글입니다.
+									 
+										</a>
+									</p>
+									 <a href="#" class="state state2">YES</a>
+								</div>
+							</li>
+						</ul>
+					
+					</div>
+				</div>
+			</div>
 			
 			 
 			
@@ -338,6 +433,89 @@ include "../head.sub.php";?>
 			<a href="#" class="f_cs"><img src="/images/common/cs.png" alt=""/></a>
 		</div>
 	</div>
+<script>
+jQuery(function($){
+	$(".clickbox h5 ").click(function(){
+		$(".clickbox>div").slideUp(200);
+		$(".clickbox h5 i").removeClass('fa-angle-up');
+		$(".clickbox h5 i").addClass('fa-angle-down');
+ 
+		if($(this).parent().find(">div").css("display") != "block"){
+			 $(this).parent().find(">div").slideDown(200);
+			 $(this).find('i').addClass('fa-angle-up');
+		}
+	   
+		
+	});
+	
+	$('.tab a').click(function(e) {
+		let winH = screen.height;
+		let winH2 = window.innerHeight;
+		var winR = winH - winH2;
+		 sh = $(".tab").height(); 
+		e.preventDefault();
+		 
+		  target = $(this).attr('href');
+		 
+		  
+        $('html,body').animate({
+            scrollTop: $("#" + target).offset().top - (sh+winR-10)
+        }, 300);
+		$('.tab a').removeClass('on');
+		$(this).addClass('on');
+    });   
+  $( window ).scroll( function() {
+	
+
+	let winH = screen.height;
+		let winH2 = window.innerHeight;
+		var winR = winH - winH2;
+	
+	var sit_top = $( ".product_view").offset().top;
+	var sit_H = $( ".product_view").offset().top + $( ".product_view").outerHeight();
+	if ( $( document ).scrollTop() > sit_top && $( document ).scrollTop() < sit_H) {
+		 $(".tab").addClass("fix");
+	}else{
+		 $(".tab").removeClass("fix");
+	}
+	
+	fir_href = $(".tab a").eq(0).attr('href');
+	sh =  $(".tab").outerHeight();
+	 
+	fir_target =$("#"+fir_href); 
+	fir_h = fir_target.height();
+	  
+	fir_end =  fir_target.offset().top;
+ 
+	 if (  $(this).scrollTop() <= fir_end) {
+		 $(".tab a").removeClass("on");
+		 $(".tab a").eq(0).addClass("on");
+	 }
+	 
+	 
+	len = $(".tab a").length;
+	for (i = 0; i < len; i++) {
+		href = $(".tab a").eq(i).attr('href');
+	 
+		target = $("#" + href);
+		target_h = target.outerHeight();
+		 
+		target_end = target_h +target.offset().top;
+	 
+		if (  ($(this).scrollTop() >= (target.offset().top - (sh+winR)) && $(this).scrollTop() <= (target_end - (sh+winR)))) {
+		  
+			$(".tab a").removeClass("on");
+			$(".tab a").eq(i).addClass("on");
+			 
+			 
+			break;
+		}
+	}
+		
+		
+	});
+});
+</script>
 	<?php include "../tail.php";?> 
 </div>
 <?php include "../tail.sub.php";?>
