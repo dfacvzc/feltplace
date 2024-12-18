@@ -363,3 +363,6 @@ box-shadow:none;
 .error_footer p{color:#B4B2B1; font-size:3.5vw; line-height:1.4em; margin-bottom:2vw}
 .error_footer a{font-size:3.5vw; color:#F38E17; font-weight:bold;}
  
+ 
+.intro{width:100%;height:100vh;background: url(/images/common/intro.png) no-repeat 50% #EE2D2C;background-size: 30vh auto;}
+.intro2{width:100%;height:100vh;background: url(/images/common/intro2.png) no-repeat 50% #fff;background-size: 30vh auto;}
