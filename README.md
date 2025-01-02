@@ -73,4 +73,32 @@
 ## 10. 스플래시 이미지
 - **이미지1**: `/intro.php`
 - **이미지2**: `/intro2.php`
- 
+
+---
+
+
+## 11. 내정보 *(20241231 추가 파일)*  
+- **더보기 - 로그인**: `/member/mypage.php`  
+  *(로그인 후 페이지 포함)*  
+- **더보기 - 알림화면**: `/member/noti_list.php`
+- **더보기 - 설정**: `/member/setting.php`  
+  *(로그아웃 팝업 포함)*  
+- **더보기 - 계정관리**: `/member/account.php`
+- **더보기 - 알림설정**: `/member/noti.php`
+- **더보기 - 이용약관**: `/member/terms.php`
+- **더보기 - 개인정보취급방침**: `/member/personal.php`
+- **더보기 - 위치기반서비스**: `/member/service.php`
+- **더보기 - 내정보**: `/member/info.php`
+- **더보기 - 위치기반서비스**: `/member/service.php`
+- **더보기 - 비밀번호 수정**: `/member/password.php`
+- **더보기 - 회원탈퇴**: `/member/out.php`
+- **더보기 - 관심브랜드 0개**: `/member/no_brand.php`
+- **더보기 - 관심브랜드**: `/member/brand.php`  
+  *(관심브랜드 삭제 팝업 포함)*  
+- **더보기 - 관심브랜드**: `/member/customer.php`
+- **더보기 - 자주찾는질문**: `/member/faq.php`
+- **더보기 - 1:1 문의**: `/member/contact.php`
+  *(1:1 문의 팝업 포함)*  
+- **더보기 - 공지사항**: `/member/board.php`
+- **더보기 - 공지사항 뷰**: `/member/board_view.php`
+  
