@@ -64,6 +64,7 @@ box-shadow: 0 0 5px rgba(0,0,0,0.2);
 .left{text-align:left !important;}
 .center{text-align:center ;}
 .gray{color:#828282 !important;}
+.black2{color:#403F3E !important;}
 .org{color:#e49b52 !important;}
 .blue{color: #1f3e87!important;}
 .white{color:#fff !important;}
@@ -127,6 +128,8 @@ transition: background 0.25s ease-in-out;
 .btn2{color:#fff;background:#EE2D2C; }
 .btn3{color:#221E1F;background:#fff; border:1px solid #E5E5EA}
 .btn4{color:#F38E17;  border:1px solid #F38E17}
+.btn5{color:#fff; background-color:#2c1604}
+.btn6{color:#fff; background-color:#ccc}
  
 .tbtn1{font-size:4.4vw;border-bottom: 2px solid #000;font-weight: bold;}
 
@@ -258,8 +261,13 @@ box-shadow:none;
 .option_list li .chk_box span{margin-right:4.6vw}
  
  
-.alert-msg{padding:0 5vw}
+.alert-msg{width: 90vw;margin: 0 auto;border-radius: 1vw;overflow: hidden;}
 .alert-msg p{padding:3vw 5vw;  background-color:#fff8f1; color:#F38E17; font-size:3.6vw; line-height:1.4em; border-radius:4px}
+.alert-msg p img{width:4.4vw; margin-right:1vw; vertical-align:middle;}
+
+.alert-msg.red{}
+.alert-msg.red p{background-color:#EE2D2C0D; color:#EE2D2C;}
+
 
 
 .btn-select-wrap{padding:3vw 5vw;}
@@ -366,3 +374,17 @@ box-shadow:none;
  
 .intro{width:100%;height:100vh;background: url(/images/common/intro.png) no-repeat 50% #EE2D2C;background-size: 30vh auto;}
 .intro2{width:100%;height:100vh;background: url(/images/common/intro2.png) no-repeat 50% #fff;background-size: 30vh auto;}
+
+
+.fix_btn{display:block; position:fixed; left:5vw; bottom:5vw; width:90vw; height:11vw; font-size:3.8vw}
+
+.fix_alert{position:fixed;display: flex;left:5vw;bottom:5vw;width:90vw;height:11vw;font-size:3.8vw;background-color:#2C1604CC;border-radius:5.5vw;text-align: center;justify-content: center;align-items: center;color: #fff;}
+
+
+.select_box{padding:5vw 0;display:flex;border-radius:4px;overflow: hidden;}
+.select_box div{position:relative; flex:1 0 auto;border:2px solid #EFEEED;color:#666;text-align:center;font-size:3.8vw;height:11vw;display: flex;align-items: center;justify-content: center;} 
+.select_box div input{position:absolute; top:0; left:0; width:100%; height:100%; opacity:0;}
+.select_box div.on{border:2px solid #F8992C; color:#F8992C;}
+
+.select_box div:first-child{border-radius:4px 0 0 4px;}
+.select_box div:last-child{border-radius:0 4px 4px 0;}
